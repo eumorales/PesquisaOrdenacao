@@ -62,6 +62,8 @@ public class aula extends javax.swing.JFrame {
         AreaPesquisa1.setText("Ocorrências:");
 
         txtOcorrencias.setEditable(false);
+        txtOcorrencias.setBackground(new java.awt.Color(204, 204, 204));
+        txtOcorrencias.setForeground(new java.awt.Color(255, 153, 0));
         txtOcorrencias.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtOcorrenciasKeyPressed(evt);
@@ -113,6 +115,7 @@ public class aula extends javax.swing.JFrame {
 
         ArrayList<Integer> teclasProibidas = new ArrayList<>();
         teclasProibidas.add(KeyEvent.VK_ENTER); 
+        teclasProibidas.add(KeyEvent.VK_BACK_SPACE);
 
         if (!teclasProibidas.contains(evt.getKeyCode())) {
 
